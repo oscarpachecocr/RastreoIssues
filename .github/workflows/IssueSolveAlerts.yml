@@ -1,0 +1,9 @@
+name: Aviso_Resolve!
+on:
+  issues:
+    types: closed
+jobs:
+  AlCerrar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Caso ${{ github.event.issue.number }} cerrado"
